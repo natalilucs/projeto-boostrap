@@ -1,0 +1,204 @@
+/* Será feito um projeto para criação/renovação do site principal do negocio, tendo em vista que hoje a grande parte dos empreendedores não dispõe de conhecimento e/ou so investem em plataformas comuns(instagram , facebook ,etc) será um projeto preparatório para o projeto final , lembrando os sites aqui desenvolvidos serão utilizados para avaliação e validação tanto do time SOULCODE . Empenho como se fosse uma oportunidade 100% real.
+
+
+RODAPE ESTILIZADO COM CSS linha 52-76
+
+
+Requisitos gerais :
+A dinâmica desse projeto consiste em avaliar todas as tecnologias vista até bootstrap exigindo uma inserção de solução especifica (intermediaria) de cada uma delas no escopo global do projeto.
+
+Requisitos específicos:
+Jquery : utilizar um scroll que a partir de  400px do topo do body apareça uma seta ao lado direito da pagina que funciona como retorno suave para o inicio da pagina , aplicar essa função na pagina inicial do projeto. ok
+JavaScript: validações.
+Css: Estilizar o rodapé usando exclusivamente css. ok
+HTML: Utilizar <aside> e <article> ok
+Realizar comentário no código linha 4 os requisitos específicos(indice dos requisitos).
+
+Requisitos BootStrap:
+Layout responsivo usando grid  ok
+formulário ok
+menu drop-down/nav-bar responsivo ok
+Estilo nos botões e texto btn_ok
+
+Requisitos do projeto : 
+
+Site formado com 4 páginas (mínimo) 6 (máximo): 01 - Pagina inicial , 02 - Quem somos/Sobre Nós , 03 - Formulário e 04 - Parceiros ou Serviços; ok
+Utilizar a paleta de cores do cliente, podendo mudar os tons apenas nas variações das cores base; ok
+Utilizar prioritariamente logos e arquivos do cliente (prioritariamente) , caso o cliente não disponha pode utilizar mídia genérica baseada no negocio do cliente .
+O cliente pode fornecer ideias adicionais para o projeto mas as partes obrigatórias são as contempladas nos requisitos aqui apresentados , caso tenha atendido a todos e seja viável implementar extras assim o faça. */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #B5C3CB;
+    
+}
+
+/* article{
+     border: solid 5px; 
+}
+
+aside{
+     border: crimson solid 5px; 
+} */
+
+
+
+footer{
+    width: 100%;
+    background-color: #bc9e80b9;
+    display: flex;
+    position: relative;
+    margin-top: 100px;
+
+    /* height: 40vh; */
+}
+
+#rodape{
+    /* border: solid yellow 3px ; */
+    display: flex;
+    position: absolute;
+}
+
+
+
+.cont_rodape{
+    /* border: solid crimson 3px ; */
+    width: 33.33%;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+
+
+/* #subirTopo img {
+    width: 5vh;
+    height: 5vh;
+} */
+
+#subirTopo{
+    text-decoration: none;
+    background: #595554;
+    border: black;
+    bottom: 100px;
+    right: 100px;    
+    text-align: center;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: fixed;
+    border-radius: 100px;
+    /* font-family: sans-serif; */
+    opacity: .8;
+    display: none;
+
+}
+
+.logoLM{
+    width: 100%;
+}
+
+.texto_pequeno{
+    font-size: x-small;
+    font-style: oblique;
+    color: #484a4b;
+}
+
+
+
+.cartoes{
+    border-color: #ddbcbe;
+    background-color: #ddbcbe8f;
+    /* #D4DDE3 opaco*/
+
+}
+
+.cor_titulo{
+    color: #EDE9E4;
+}
+
+.cor_titulovmv{
+    color: #EDE9E4;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.cor_titulo2{
+    color: #BC9E80;
+}
+
+.cor_titulo3{
+    color: #595554;
+}
+
+
+
+.btn-outline-light {
+    color: #EDE9E4;
+    border-color: #EDE9E4;
+}
+
+.moveis{
+    width: 200px;
+    height: 150px;
+
+}
+
+.listing {
+    list-style: none;
+    margin: 2em;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
+  }
+
+
+  .produtos li { 
+    
+    display: flex;
+    flex-direction: column;
+  }
+
+  .produtos .cta {
+    margin-top: auto;    
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .produtos .conteudo {
+    padding: 5px;
+  }
+
+  .produtos {
+    border-radius: 20px;
+    list-style: none;
+    margin: 2em;
+    display: grid;
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+  }
+  .produtos .maior {
+    grid-column-end: span 2;
+  }
+
+  #campo_vmv{
+      margin-top: 75px;
+      background-color: #595554;
+
+  }
+
+
+#fundadora{
+    background-color: #d4dde35e;
+    border-radius: 10px;
+}

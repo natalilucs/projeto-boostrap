@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Ulitizado JQuery - scrollTop // menu dropdown responsivo todas as paginas // Utilizado na pag index Article e Aside // botoes estilizados na pag ambientes e cadastro // textos estilizados na pag index // rodape estilizado com css  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="style.css">  
+    <title>LM - Página Principal </title>
+</head>
+<body>    
+
+    <nav class="navbar col-lg-12 navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"> <img src="img/logosf.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quemsomos.html">Quem somos</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="ambientes.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ambientes</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">                    
+                    <a class="dropdown-item" href= "ambientes.html" href="#sala" >Sala</a>
+                    <a class="dropdown-item" href= "ambientes.html" href="#quarto" >Quartos</a>
+                    <a class="dropdown-item" href= "ambientes.html" href="#cozinha" >Cozinha</a>
+                    <a class="dropdown-item" href= "ambientes.html" href="#toilette" >Toilette</a>
+                    <a class="dropdown-item" href= "ambientes.html" href="#projetos_3d">Projetos 3D</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="ambientes.html" href="#area_externa">Área Externa</a>
+                </div>
+              </li>
+
+            <li class="nav-item">
+            <a class="nav-link" href="cadastro.html">Cadastro</a>
+            </li>
+
+          </ul>
+
+          <div>
+                <div class="input-group-prepend">              
+                    <form class="form-inline my-2 my-lg-0 ">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar no site" aria-label="Pesquisar">
+                        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" >
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg></button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+      </nav>
+
+    <main class="container-fluid">
+        <h1 class="display-4 text-lg-center cor_titulo">LM - Arquitetura e Interiores </h1>
+        <h6 class="text-muted text-lg-center"> Móveis Planejados para cada projeto</h6>
+        
+        <section class="row">
+            
+
+            <section class="col-lg-9" >
+            
+                <article id="artigo1 " class="mt-lg-5">                                           
+                    <h3 class=" text-lg-center cor_titulo3"> Conheça nossos projetos</h3>                    
+                    <img src="img/apto.jpg" class="w-50 mt-lg-5 float-left">
+                    <p class="w-50 mt-lg-5 float-left">Nossos móveis planejados  são de altíssima qualidade para ambientes residenciais, comerciais, hoteleiros, entre outros. Uma fábrica nova equipada com máquinas da mais alta tecnologia e exclusivamente dimensionadas para atender as novas exigências do mercado, idealizando seus produtos para garantir a satisfação e as necessidades de seus clientes.
+                    Os produtos destacam-se pelo design, onde forma e função interagem naturalmente, proporcionando soluções práticas e inovadoras para a criação dos mais variados ambientes. Os materiais utilizados são de excelente qualidade, e a madeira é proveniente de reflorestamentos, contribuindo com todas as exigências de preservação do ecossistema. O produto idealizado por nossa fábrica está inserido em um universo de desejos, sonhos e realidade.</p>  
+                                 
+                </article>
+                
+            <section>
+                
+            </section>  
+                
+                <article id="artigo2" class="mt-lg-5">
+                    <h3 class="text-lg-center cor_titulo3" class="hover"> Lançamentos de novos produtos</h3>                    
+                    <img src="img/dining.jpg" class="w-50 mt-5 float-right">
+                    <p class="w-50 mt-5 float-right">
+                      A arquiteta se movimenta com igual desenvoltura entre posts sobre casas flutuantes cheias de charme e dicas de como decorar a mesa para diversas ocasiões, por exemplo. Isso sem falar na atenção especial que a autora dá à arquitetura de lojas. A impressão é que Eduarda sempre repara nos detalhes de onde quer que vá.
+                      Não importa o estilo: a decoração de ambientes pode ser temática, irreverente, ou seguir os estilos de decoração já consagrados: clean, retrô, vintage, romântico, shabby chic, country, clássico ou contemporâneo, o que importa é que a decoração de ambientes deixe a sua casa com a sua "cara".
+
+                      A decoração de ambientes não depende, necessariamente, de quanto dinheiro você tem. Depende de criatividade.
+                    </p>    
+                </article>   
+    
+    
+    
+                
+            </section>
+    
+    
+            <aside class="col-lg-3 mt-auto">                  
+                <div class="card border-dark mb-3" >
+                    <!-- <div class="card-header">Depoimentos</div> -->
+                    <div class="card-body text-dark cartoes" >
+                      <h6 class="card-title"><em>Qualidade à preço justo</em></h6>
+                      <p class="card-text">"Comprei minha cozinha planejada e estou satisfeito.
+                        Entregarao em 10 dias e montagem perfeita.
+                        Recomendo sim."</p>
+                      <small class="text-muted">Pablo Ferreira, SP</small>
+                    </div>
+                  </div> 
+
+
+                  <div class="card border-dark mb-3">
+                    <!-- <div class="card-header">Depoimentos</div> -->
+                    <div class="card-body text-dark cartoes" >
+                      <h6 class="card-title"><em>Qualidade à preço justo</em></h6>
+                      <p class="card-text">"Os móveis são perfeitos, a qualidade é incrível, possuo a mais de 5 anos e parecem novos!</p>
+                      <small class="text-muted">Adriana Souza, SP</small>
+                    </div>
+                  </div> 
+
+                  <div class="card border-dark mb-3">
+                    <!-- <div class="card-header">Depoimentos</div> -->
+                    <div class="card-body text-dark cartoes" >
+                      <h6 class="card-title"><em>Encantada com o serviço</em></h6>
+                      <p class="card-text">"Excelente Arquiteta, com ótimas soluções, entregas no prazo e preço justo"</p>
+                      <small class="text-muted">Joana Carvalho, SP</small>
+                    </div>
+                  </div> 
+            </aside>
+    
+
+        </section>
+
+        
+
+
+
+    </main>
+
+    <footer id="rodape">
+
+        <section class="cont_rodape">
+
+              
+          </section>
+            <section class="cont_rodape">
+                <img src="img/logo2sf.png" alt="logo LM" class="logoLM">
+                <br>
+                <a href="https://www.instagram.com/luanamercenas_arquitetura/" target="_blank"><img src="img/instagram1.png" class="logo_redes" alt="Instagram"></a>                
+                <a href="https://www.linkedin.com/in/luana-mercenas-4082a515b/" target="_blank"><img src="img/linkedin1.png" class="logo_redes" alt="LinkedIn"></a>
+                <a href="mailto:natali.luca92@gmail.com" target="_blank"><img src="img/o-email.png"></a> 
+                <br>
+                <span class="cor_titulo logoLM">All rights reserved &copy2021</span>                            
+            </section>
+          <section class="cont_rodape">
+
+        
+        </section>
+
+
+  
+      </footer>
+
+    <button id="subirTopo" onclick="voltarTop()">
+        <img src="img/up.png" alt="subir" class="subir">
+    </button>
+
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script> 
+
+
+
+    <script src="script.js"></script>
+       
+    <script src="jquery-js/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

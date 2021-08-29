@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Formulário utilizando bootstrap -->
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>LM - Cadastro </title>
+</head>
+
+<body>
+
+  <nav class="navbar col-lg-12 navbar-expand-lg navbar-light bg-light mr-lg-0">
+    <a class="navbar-brand" href="#"> <img src="img/logosf.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+      aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quemsomos.html">Quem somos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="ambientes.html" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ambientes</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="ambientes.html" href="#sala">Sala</a>
+            <a class="dropdown-item" href="ambientes.html" href="#quarto">Quartos</a>
+            <a class="dropdown-item" href="ambientes.html" href="#cozinha">Cozinha</a>
+            <a class="dropdown-item" href="ambientes.html" href="#toilette">Toilette</a>
+            <a class="dropdown-item" href="ambientes.html" href="#projetos_3d">Projetos 3D</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="ambientes.html" href="#area_externa">Área Externa</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="cadastro.html">Cadastro</a>
+        </li>
+
+      </ul>
+
+      <div>
+        <div class="input-group">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 input-group-prepend" type="search" placeholder="Pesquisar no site" aria-label="Pesquisar">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg></button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <main>
+    <section class="container">
+
+
+      <div class="row">
+        <h2 class="display-2 text-lg-center cor_titulo" ;>CADASTRE-SE</h2>
+
+      </div>
+
+      <div class="alert alert-dark" role="alert">
+        Cadastre se em nosso site para receber promoções, orçamentos entre outros!
+      </div>
+
+
+
+      <form>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label class="sr-only">Insira seu nome</label>
+            <input type="text" class="form-control" placeholder="Insira seu nome" value="" id="nome" onblur="validaNome(this)" required>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label class="sr-only">Insira seu sobrenome</label>
+            <input type="text" class="form-control" placeholder="Insira seu sobrenome" value="" id="sobrenome" onblur="validaSobrenome(this)"  required>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label class="sr-only">Insira seu email</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Insira seu email"
+                aria-describedby="inputGroupPrepend" required id="oemail" onblur="validaEmail(this)">
+            </div>
+
+          </div>
+        </div>
+        <div class="form row">
+          <div class="col-md-4 mb-3">
+            <label class="sr-only">Data de Nascimento</label>
+            <input type="date" class="form-control" placeholder="Data de Nascimento" value="" id="data_nasc" onblur="valida_data(this)" required>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <label class="sr-only">Telefone</label>
+            <input type="text" class="form-control" placeholder="(00) 0000-0000" data-mask="(00) 0000-0000" data-mask-selectonfocus="true" value="" id="telefone" onblur="validaTelefone(this)" required>
+          </div>
+
+
+          <div class="form-group col-md-4 mb-3">
+            <label for="exampleFormControlSelect1" class="sr-only">Sexo</label>
+            <select class="form-control">
+              <option>Feminino</option>
+              <option>Masculino</option>
+              <option>Prefiro não informar</option>
+              <option selected disabled>Sexo</option>
+            </select>
+          </div>
+        </div>
+
+
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label class="sr-only">Cidade</label>
+            <input type="text" class="form-control" placeholder="Cidade" required>
+
+          </div>
+          <div class="col-md-3 mb-3">
+            <label class="sr-only">Estado</label>
+            
+            <select class="form-control" name="estado">
+              <option selected="" value="">Selecione o Estado (UF)</option>
+              <option value="Acre">Acre</option>
+              <option value="Alagoas">Alagoas</option>
+              <option value="Amapá">Amapá</option>
+              <option value="Amazonas">Amazonas</option>
+              <option value="Bahia">Bahia</option>
+              <option value="Ceará">Ceará</option>
+              <option value="Distrito Federal">Distrito Federal</option>
+              <option value="Espírito Santo">Espírito Santo</option>
+              <option value="Goiás">Goiás</option>
+              <option value="Maranhão">Maranhão</option>
+              <option value="Mato Grosso">Mato Grosso</option>
+              <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+              <option value="Minas Gerais">Minas Gerais</option>
+              <option value="Pará">Pará</option>
+              <option value="Paraíba">Paraíba</option>
+              <option value="Paraná">Paraná</option>
+              <option value="Pernambuco">Pernambuco</option>
+              <option value="Piauí">Piauí</option>
+              <option value="Rio de Janeiro">Rio de Janeiro</option>
+              <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+              <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+              <option value="Rondônia">Rondônia</option>
+              <option value="Roraima">Roraima</option>
+              <option value="Santa Catarina">Santa Catarina</option>
+              <option value="São Paulo">São Paulo</option>
+              <option value="Sergipe">Sergipe</option>
+              <option value="Tocantins">Tocantins</option>
+              </select>
+
+          </div>
+          <div class="col-md-3 mb-3">
+            <label class="sr-only">CEP</label>
+            <input type="text" class="form-control" placeholder="CEP" required id=cep onblur="validaCep(this)">
+
+          </div>
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Endereço</button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Rua</a>
+              <a class="dropdown-item" href="#">Alameda</a>
+              <a class="dropdown-item" href="#">Avenida</a>
+              <a class="dropdown-item" href="#">Estrada</a>
+              <a class="dropdown-item" href="#">Via</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Outros</a>
+            </div>
+          </div>
+          <input type="text" class="form-control" aria-label="Input text com botão dropdown"
+            placeholder="Ex. Estrada do M'boi Mirim, 211" required>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlSelect1" class="sr-only">Tipo de residência</label>
+          <select class="form-control">
+            <option selected disabled>Tipo de residência</option>
+            <option>Apartamento</option>
+            <option>Casa</option>
+            <option>Chácara</option>
+            <option>Condomínio</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlSelect1" class="sr-only">Mensagem</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"placeholder="Deixe sua mensagem"></textarea>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            Quero um orçamento!
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" checked="checked" disabled>
+          <label class="form-check-label" for="defaultCheck2">
+            Quero receber e-mails de promoções e informativos!
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" checked="checked" disabled>
+          <label class="form-check-label" for="defaultCheck2">
+            Concordo com os termos de compromisso!
+          </label>
+        </div>
+
+
+        <button type="submit" class="btn btn-outline-light">Enviar Dados</button>
+        <button type="reset" class="btn btn-outline-light">Limpar</button>
+
+
+
+      </form>
+    </section>
+
+    
+
+
+
+  </main>
+
+  <footer id="rodape">
+
+    <section class="cont_rodape">
+
+          
+      </section>
+        <section class="cont_rodape">
+            <img src="img/logo2sf.png" alt="logo LM" class="logoLM">
+            <br>
+            <a href="https://www.instagram.com/luanamercenas_arquitetura/" target="_blank"><img src="img/instagram1.png" class="logo_redes" alt="Instagram"></a>                
+            <a href="https://www.linkedin.com/in/luana-mercenas-4082a515b/" target="_blank"><img src="img/linkedin1.png" class="logo_redes" alt="LinkedIn"></a>
+            <a href="mailto:natali.luca92@gmail.com" target="_blank"><img src="img/o-email.png"></a> 
+            <br>
+            <span class="cor_titulo logoLM">All rights reserved &copy2021</span>                            
+        </section>
+      <section class="cont_rodape">
+    
+    </section>
+
+
+
+  </footer>
+
+
+  <button id="subirTopo" onclick="voltarTop()">
+    <img src="img/up.png" alt="subir" class="subir">
+  </button>
+
+
+
+
+
+
+  <script src="script.js"></script>
+
+
+
+  <script src="jquery-js/jquery-3.6.0.min.js"></script>
+  <script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
